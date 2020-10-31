@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/grey_light"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBiography"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Willard Christopher Will Smith, Jr. (born September 25, 1968) is an American actor, film producer and pop rapper. He has enjoyed success in music, television and film. In April 2007, Newsweek called him the most powerful actor on the planet. Smith has been nominated for four Golden Globe Awards, two Academy Awards, and has won multiple Grammy Awards.\n\nIn the late 1980s, Smith achieved modest fame as a rapper under the name The Fresh Prince. In 1990, his popularity increased dramatically when he starred in the popular television series The Fresh Prince of Bel-Air. The show ran for nearly six years (1990–1996) on NBC and has been syndicated consistently on various networks since then.\n\nIn the mid-1990s, Smith transitioned from television to film, and ultimately starred in numerous blockbuster films that received broad box office success. In fact, he is the only actor in history to have eight consecutive films gross over $100 million in the domestic box office as well as being the only actor to have eight consecutive films in which he starred open at the #1 spot in the domestic box office tally. Fourteen of the 19 fiction films he has acted in have accumulated worldwide gross earnings of over $100 million, and 4 of them took in over $500 million in global box office receipts. His most financially successful films have been Bad Boys, Bad Boys II, Independence Day, Men in Black, Men in Black II, I, Robot, The Pursuit of Happyness, I Am Legend, Hancock, Wild Wild West, Enemy of the State, Shark Tale, Hitch, and Seven Pounds. He also earned critical praise for his performances in Six Degrees of Separation, Ali, and The Pursuit of Happyness, receiving Best Actor Oscar nominations for the latter two." />
+
+        <TextView
+            android:id="@+id/tvBornTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/born"
+            android:textColor="@color/black_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvBiography"
+            app:layout_constraintTop_toBottomOf="@id/tvBiography" />
+
+        <TextView
+            android:id="@+id/tvBorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="@id/tvBornTitle"
+            app:layout_constraintStart_toEndOf="@id/tvBornTitle"
+            app:layout_constraintTop_toTopOf="@id/tvBornTitle"
+            tools:text="1968-09-25" />
+
+        <TextView
+            android:id="@+id/tvIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/in"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/tvBornTitle"
+            app:layout_constraintStart_toEndOf="@id/tvBorn"
+            app:layout_constraintTop_toTopOf="@id/tvBornTitle" />
+
+        <TextView
+            android:id="@+id/tvPlaceOfBirth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="@id/tvBornTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvIn"
+            app:layout_constraintTop_toTopOf="@id/tvBornTitle"
+            tools:text="Philadelphia, Pennsylvania, USA" />
+
+        <TextView
+            android:id="@+id/tvDiedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/died"
+            android:textColor="@color/black_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/tvBiography"
+            app:layout_constraintTop_toBottomOf="@id/tvBornTitle" />
+
+        <TextView
+            android:id="@+id/tvDied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/purple_700"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tvDiedTitle"
+            app:layout_constraintStart_toEndOf="@id/tvDiedTitle"
+            app:layout_constraintTop_toTopOf="@id/tvDiedTitle"
+            tools:text="1968-09-25" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

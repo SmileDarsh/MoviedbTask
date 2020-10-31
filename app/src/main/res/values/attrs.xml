@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomToolbar">
+        <attr name="title" format="string" />
+        <attr name="back_visibility" format="boolean" />
+        <attr name="toolbar_background_color" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgressView">
+        <attr name="error_message" format="string" />
+        <attr name="progress_image" format="integer" />
+        <attr name="progress_background_color" format="integer" />
+    </declare-styleable>
+</resources>

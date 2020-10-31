@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MoviedbTask</string>
+    <string name="persons">Persons</string>
+    <string name="person_details">Person Details</string>
+    <string name="person_image">Person Image</string>
+    <string name="born">Born:</string>
+    <string name="died">Died:</string>
+    <string name="in">in</string>
+    <string name="retry">Retry</string>
+    <string name="permissions_denied">You must accept all permissions first</string>
+    <string name="save_successfully">Image saved successfully</string>
+    <string name="save_failed">There was a problem saving the photo. Please try again</string>
+    <string name="no_internet">No Internet Connection. Make sure Wi-Fi or Cellular data is turned on , then try again</string>
+</resources>
